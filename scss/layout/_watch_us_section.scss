@@ -1,0 +1,70 @@
+.watch-us-section{
+    position: relative;
+    padding: 0;
+    margin: 0 0 50px;
+    overflow-x: hidden;
+    h3{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 28%;
+        color: $white;
+        font-size: 42px;
+    }   
+    .video-block {
+        .img-box{
+            top: 43%;
+        }
+        .play-btn{
+            top: 43%;
+        }
+    }
+}
+
+@media (max-width: $ipad-pro) {
+    .watch-us-section {
+        h3{
+            font-size: 34px;
+        }
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .watch-us-section {
+        h3{
+            font-size: 30px;
+        }
+    }
+}
+
+
+@media (max-width: $ipad-portrait) {
+    .watch-us-section {
+        h3{
+            font-size: 26px;
+            bottom: 22%;
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .watch-us-section {
+        h3{
+            bottom: 10px;
+            font-size: 22px;
+        }
+        .video-block {
+            .img-box {
+                top: 53%;
+                left: 53%;
+                .circle{
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+            .play-btn{
+                max-width: 5%;
+            }
+        }
+    }
+}

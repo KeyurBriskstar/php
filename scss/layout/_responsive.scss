@@ -1,0 +1,40 @@
+@media (max-width: 1024px) {
+    .custom-title-primary h3 {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .custom-title-primary span {
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+
+    .custom-title-primary {
+        padding: 0px 10px;
+    }
+
+    .theme-btn {
+        margin: 0px 0px 0px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-title-primary span {
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+
+    .custom-title-primary h3 {
+        font-size: 27px;
+        line-height: normal;
+    }
+
+    .custom-title-primary {
+        padding: 0px 10px;
+    }
+
+    .theme-btn {
+        margin: 0px 0px 0px 10px;
+    }
+}

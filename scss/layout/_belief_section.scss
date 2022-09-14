@@ -1,0 +1,109 @@
+.belief-section{
+    padding: 100px 0;
+    background: #FFF6F8 url(../img/about-us-page/belief-bg.png) no-repeat top 70px right;
+    .slider-card{
+        background: #FFFFFF;
+        box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+        border-radius: 20px;
+        padding: 40px 40px;
+        margin: 0 20px;
+        h4{
+            font-weight: $font-semibold;
+            font-size: 24px;
+            line-height: 32px;
+            color: $theme-blue;
+            margin: 0;
+            padding: 25px 0 20px;
+        }
+    }
+    .owl-stage-outer{
+        padding: 50px 0;
+        img{
+            width: auto;
+        }
+    }
+    .belief-carousel-slider{
+        position: relative;
+        .belief-slider-nav {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 9;
+            transform: translateY(-50%);
+            .belief-slider-next {
+                background: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                // padding: 11px 15px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                margin: 0px 0px 0px 10px;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                line-height: 50px;
+                i {
+                    color: #EE3F59;
+                }
+                &:hover, &:focus {
+                    background: linear-gradient(219.67deg, #EE3F59 41.87%, #F04D3C 93.99%);
+                    i {
+                        color: #ffffff;
+                        
+                    }
+                }
+            }
+    
+            .belief-slider-prev {
+                background: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                // padding: 11px 15px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                line-height: 50px;
+                i {
+                    color: #EE3F59;
+                }
+                &:hover, &:focus {
+                    background: linear-gradient(219.67deg, #EE3F59 41.87%, #F04D3C 93.99%);
+                    i {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: $small-laptop) {
+    .belief-section {
+        .slider-card {
+            h4{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .belief-section {
+        padding: 100px 0 50px;
+        .slider-card{
+            padding: 30px 30px;
+        }
+    }
+}

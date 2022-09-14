@@ -1,0 +1,179 @@
+.bg-ultralight-pink{
+    &.our-vision-mission-section{
+        padding: 100px 0;
+        background: $white;
+        .hiring-process-ul {
+            width: 100%;
+            li{
+                max-width: 24%;
+                width: 24%;
+                text-align: left;
+                &:after{
+                    background-image: url(../img/about-us-page/dotted-blue-line.svg);
+                    width: 312px;
+                    height: 77px;
+                    left: 30%;
+                    right: 0;
+                    top: 11%;
+                }
+                span{
+                    text-align: left;
+                    max-width: 100%;
+                    font-size: 24px;
+                    color: $theme-blue;
+                    margin: 0;
+                    padding: 0 0 10px;
+                }
+                &:nth-child(even){
+                    &:after{
+                        background-image: url(../img/about-us-page/dotted-pink-line.svg);
+                    }
+                }
+            }
+        }
+        .nav-tabs{
+            padding: 0 0 30px;
+            margin: 0 0 20px;
+            .nav-link{
+                background: #F4F4F8;
+                font-size: 20px;
+                color: $theme-blue;
+                font-weight: $font-semibold;
+                font-family: 'Roboto Slab';
+                padding: 8px 36px;
+                border-radius: 8px;
+                margin: 0 30px 0 0;
+                min-width: 174px;
+                &.active{
+                    color: $white;
+                    background: $theme-pink;
+                }
+            }
+        }
+        .first-text{
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 20px 0 20px 50px;
+        }
+        h3{
+            font-size: 32px;
+            color: $theme-pink;
+            margin: 0 0 40px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+@media (max-width: $large-laptop) {
+    .bg-ultralight-pink{
+        &.our-vision-mission-section {
+            .hiring-process-ul {
+                li{
+                    &:after{
+                        width: 272px;
+                        top: 13%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: $small-laptop) {
+    .bg-ultralight-pink {
+        &.our-vision-mission-section{
+            .hiring-process-ul {
+                li{
+                    &:after{
+                        width: 252px;
+                        top: 13%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-pro) {
+    .bg-ultralight-pink {
+        &.our-vision-mission-section{
+            .hiring-process-ul {
+                li{
+                    &:after{
+                        width: 252px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: $extra-small-laptop) {
+    .bg-ultralight-pink {
+        &.our-vision-mission-section{
+            .hiring-process-ul {
+                li{
+                    &:after{
+                        width: 162px;
+                        left: 50%;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .bg-ultralight-pink {
+        &.our-vision-mission-section{
+            .hiring-process-ul {
+                flex-flow: wrap;
+                li{
+                    max-width: 49%;
+                    width: 49%;
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .bg-ultralight-pink {
+        &.our-vision-mission-section{
+            .hiring-process-ul {
+                li{
+                    width: 100%;
+                    max-width: 100%;
+                    text-align: center;
+                    span{
+                        text-align: center;
+                    }
+                }
+            }
+            h3{
+                text-align: center;
+            }
+            .nav-tabs{
+                .nav-item{
+                    width: 100%;
+                    .nav-link {
+                        width: 100%;
+                        margin: 0 0 10px 0;
+                    }
+                }
+            }
+            .first-text{
+                padding: 0;
+                border: none;
+            }
+        }
+        
+    }
+}

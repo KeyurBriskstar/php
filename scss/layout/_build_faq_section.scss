@@ -1,0 +1,65 @@
+.build-faq-section {
+    .common-title {
+        h2 {
+            max-width: 100%;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+    } 
+
+    .build-faq-left {
+        position: absolute;
+        left: 0;
+        top: 40px;
+    }
+
+    p {
+        max-width: 79%;
+    }
+    
+}
+
+@media (max-width: $laptop) {
+    .build-faq-section {
+        p {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .build-faq-section {
+        p {
+           max-width: 100%;
+        }
+
+        .common-title {
+            h2 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+    }
+}   
+
+
+@media (max-width: $small-mobile) {
+    .build-faq-section {
+
+        .common-title {
+            h2 {
+                font-size: 25px;
+                line-height: 35px;
+                padding-bottom: 0px;
+            }
+        }
+
+        .build-faq-left {
+            position: absolute;
+            left: 0;
+            top: 40px;
+            width: 15%;
+        }
+    }
+}

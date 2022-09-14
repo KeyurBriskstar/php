@@ -1,0 +1,90 @@
+.our-refined-process-section{
+    padding: 100px 0;
+    .hiring-process-ul{
+        width: 100%;
+        li{
+            &:after{
+                width: 200px;
+                top: 24%;
+            }
+            &:nth-child(even){
+                &:after{
+                    width: 200px;
+                    top: 24%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $large-laptop) {
+    .our-refined-process-section {
+        .hiring-process-ul {
+            li{
+                &:after{
+                    width: 160px;
+                }
+                &:nth-child(even){
+                    &:after{
+                        width: 160px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $extra-small-laptop) {
+    .our-refined-process-section {
+        .hiring-process-ul {
+            li{
+                &:after{
+                    width: 100%;
+                }
+                &:nth-child(even){
+                    &:after{
+                        width: 100%;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .our-refined-process-section {
+        .hiring-process-ul{
+            display: block;
+            li{
+                width: 49%;
+                max-width: 100%;
+                margin-bottom: 20px;
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .our-refined-process-section {
+        .hiring-process-ul{
+            li{
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .our-refined-process-section {
+        .hiring-process-ul {
+            li{
+                width: 100%;
+            }
+        }
+    }
+}

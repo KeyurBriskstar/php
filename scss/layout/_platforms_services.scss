@@ -1,0 +1,28 @@
+.platforms-services{
+    padding: 100px 0;
+    .services-card{
+        background: #FFFFFF;
+        box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+        border-radius: 16px;
+        padding: 30px 30px;
+        height: 100%;
+        h3{
+            font-size: 28px;
+            color: $theme-pink;
+        }
+        p{
+            margin: 0;
+            max-width: 79%;
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .platforms-services {
+        .services-card {
+            p{
+                max-width: 100%;
+            }
+        }
+    }
+}

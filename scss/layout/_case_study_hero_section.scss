@@ -1,0 +1,44 @@
+.case-study-hero-section{
+    .inner-card{
+        margin-bottom: 30px;
+        padding: 34px 34px;
+        P{
+            margin: 0;
+            max-width: 100%;
+        }
+    }
+    .launches-card{
+        h4{
+            color: #97C024;
+        }
+    }
+    p{
+        max-width: 90%;
+    }
+    .right-cards{
+        margin-top: -120px;
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .case-study-hero-section {
+        .right-cards{
+            margin-top: 0;
+        }
+        .qualified-card {
+            .img-block {
+                img{
+                    max-height: 107px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .case-study-hero-section {
+        p{
+            max-width: 100%;
+        }
+    }
+}

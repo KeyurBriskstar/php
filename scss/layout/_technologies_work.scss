@@ -1,0 +1,253 @@
+.technologies_work {
+    padding: 50px 0px;
+    &.bg-ultralight-pink {
+        background: #FFF6F8;
+    }
+    .custom-title {
+        position: relative;
+        span {
+            font-family: 'Roboto Slab';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+            text-transform: capitalize;
+            color: #1B2B7C;
+            margin-bottom: 15px;
+            display: block;
+            &::before {
+                content: '';
+                width: 6%;
+                height: 2px;
+                background-color: #EE3F59;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -10px;
+                margin: 0 auto;
+            }
+        }
+        h3 {
+            font-family: 'Roboto Slab';
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 62px;
+            text-transform: capitalize;
+            color: #EE3F59;
+            margin: 0;
+        }
+    }
+
+    .custom-card {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(27, 43, 124, 0.15);
+        border: none;
+        margin: 0px 0px 30px 0px;
+        .card-body {
+            min-height: 310px;
+            padding: 16px 0px;
+        }
+        .technologies-work-box {
+            padding: 0px 16px;
+            h5 {
+                font-family: 'Roboto Slab';
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 34px;
+                letter-spacing: 0.05em;
+                text-transform: capitalize;
+                color: #2E2E2E;
+            }
+            p {
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: lowercase;
+                color: #2E2E2E;
+                max-width: 95%;
+            }
+        }
+        .technologies-box-ul {
+            margin: 40px 0px 0px 0px;
+            padding: 0px 0px;
+            list-style: none;            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            li {
+                width: 25%;
+                text-align: center;
+                display: inline-block;
+                margin-bottom: 15px;
+                .technologies-box-icon {
+                    min-height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                h5 {
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #1B2B7C;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media (max-width: $large-laptop) {
+    .technologies_work {
+        .custom-title {
+            h3{
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: $laptop) {
+    .technologies_work {
+        padding: 30px 0px;
+       
+        .custom-card {
+            min-height: 300px;
+            .technologies-work-box {
+                p {
+                    font-size: 16px;
+                }
+            }
+            .technologies-box-ul {
+                li {
+                    h5 {
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: $ipad-pro) {
+    .technologies_work {
+        .custom-title {
+            h3{
+                font-size: 34px;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+@media (max-width: $extra-small-laptop) {
+    .technologies_work {
+        .custom-card {
+            min-height: 410px;
+            .technologies-box-ul {
+                li {
+                    width: 50%;
+                    text-align: center;
+                    display: inline-block;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width: $ipad-landscape) {
+    .technologies_work {
+        .custom-card {
+            .card-body {
+                min-height: 410px;
+            }
+            .technologies-box-ul {
+                li {
+                    width: 50%;
+                    text-align: center;
+                    display: inline-block;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: $ipad-portrait) {
+    .technologies_work {
+        padding: 100px 0px;
+        .custom-title {
+            position: relative;
+            margin-bottom: -30px;
+            span {
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 0px;
+                &::before {
+                    width: 15%;
+                }
+            }
+        }
+        .custom-card {
+            .technologies-box-ul {
+                margin: 10px 0px 0px 0px;
+                li {
+                    width: 50%;
+                }
+            }
+
+            .card-body {
+                min-height: 350px;
+            }
+        }
+    }    
+}
+
+@media (max-width: $large-mobile) {
+    .technologies_work {
+        .custom-card{
+            min-height: auto;
+        }
+    }
+}
+
+@media (max-width: $small-mobile) {
+    .technologies_work {
+        padding: 70px 0px;
+        .custom-title {
+            position: relative;
+            margin-bottom: -30px;
+            span {
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 0px;
+                &::before {
+                    width: 25%;
+                }
+            }
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        .custom-card {
+            .technologies-box-ul {
+                margin: 10px 0px 0px 0px;
+                li {
+                    width: 50%;
+                }
+            }
+
+            .card-body {
+                min-height: 350px;
+            }
+        }
+    }    
+}

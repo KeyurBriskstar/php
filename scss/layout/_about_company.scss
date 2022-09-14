@@ -1,0 +1,65 @@
+.case-study-hero-section.about-company-section{
+    background: url(../img/about-us-page/about-bg-shape.svg) no-repeat top 50px right;
+    height: 100%;
+    width: 100%;
+    padding: 170px 0 100px;
+     p{
+        padding: 0 0 20px;
+        margin: 0;
+    }
+    .theme-btn{
+        display: inline-block;
+    }
+    .inner-card{
+        padding: 55px 55px;
+        p{
+            font-size: 24px;
+            padding: 0;
+        }
+    }
+    .launches-card{
+        h4{
+            color: #34A853;
+        }
+    }
+}
+
+
+@media (max-width: $ipad-landscape) {
+    .case-study-hero-section {
+        &.about-company-section{
+            .inner-card{    
+                padding: 55px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .case-study-hero-section{
+        &.about-company-section {
+            .theme-btn{
+                margin-bottom: 30px;
+            }
+            h3{
+                margin: 0 0 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .case-study-hero-section{
+        &.about-company-section{
+            .inner-card{
+                margin: 40px 0 0 0;
+            }
+            p{
+                max-width: 100%;
+            }
+            h3{
+                margin: 0 0 15px;
+            }
+        }
+    }
+}

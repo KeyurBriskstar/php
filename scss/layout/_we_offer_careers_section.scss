@@ -1,0 +1,87 @@
+.we-offer-careers-section{
+    padding: 100px 0 30px;
+    h3{
+        color: $theme-pink;
+        padding: 0;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 0 0;
+        li{
+            border-right: 1px dashed rgba(27, 43, 124, 0.15);
+            padding: 0 55px 0 0;
+            &:after{
+                background: none;
+            }
+            &:last-child{
+                border: none;
+            }
+            h4{
+                font-size: 42px;
+                line-height: 42px;
+                text-transform: capitalize;
+                color: $theme-blue;
+            }
+            p{
+                margin: 0;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+
+@media (max-width: $large-laptop) {
+    .we-offer-careers-section {
+        ul {
+            li{
+                padding: 0 30px 0 0;
+                h4{
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $extra-small-laptop) {
+    .we-offer-careers-section {
+        ul {
+            li {
+                padding: 0 10px 0 0;
+                margin-right: 10px;
+                h4{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .we-offer-careers-section {
+        ul {
+            li{
+                width: 31%;
+                h4{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .we-offer-careers-section {
+        ul{
+            display: block;
+            li{
+                border-right: none;
+                margin-bottom: 30px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}

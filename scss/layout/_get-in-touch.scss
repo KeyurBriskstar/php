@@ -1,0 +1,546 @@
+.get-in-touch{
+    padding: 50px 0px 0px;
+    .title-section{
+        .get-in-touch-dec{
+            font-family: 'Roboto Slab';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #1B2B7C;
+            &:before {
+                content: '';
+                border: 2px solid #EE3F59;
+                border-radius: 50px;
+                transform: rotate(90deg);
+                margin: 0px 20px 0px 0;
+            }
+        }
+        .get-in-touch-tilte {
+            font-family: 'Roboto Slab';
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 65px;
+            text-transform: capitalize;
+            color: #EE3F59;
+        }
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #292930;
+        }
+    }
+    .call-section {
+        .call-icon{
+            width: 70px;
+            height: 70px;
+            background: rgba(240, 86, 45, 0.15);
+            padding: 20px 25px;
+            font-size: 20px;
+            display: block;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            i{
+                color: #F0562D;
+            }
+        }
+        .call-title{
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 20px;
+            line-height: normal;
+            color: #2E2E2E;
+            margin-bottom: 10px;
+        }
+        .call-text {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #2E2E2E;
+            max-width: 70%;
+        }
+        .call-link{
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            color: #2E2E2E;
+            text-decoration: none;
+            .call-icon-link{
+                color: #F0562D;
+                margin: 0px 10px 0px 0px;
+            }
+        }
+    }
+    .chat-section {
+        .chat-icon{
+            width: 70px;
+            height: 70px;
+            background: rgba(240, 86, 45, 0.15);
+            padding: 21px 20px;
+            display: block;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            img {
+                width: 32px;
+                height: 28px;
+            }
+        }
+        .chat-title{
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 20px;
+            line-height: normal;
+            color: #2E2E2E;
+            margin-bottom: 10px;
+        }
+        .chat-text {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #2E2E2E;
+            max-width: 70%;
+        }
+        .chat-link{
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            color: #2E2E2E;
+            text-decoration: none;
+            .chat-icon-link{
+                color: #F0562D;
+                margin: 0px 10px 0px 0px;
+            }
+        }
+    }
+    .get-in-touch-form {
+        padding: 60px 30px;
+        .get-in-touch-form-title{
+            font-family: 'Roboto Slab', serif;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 38px;
+            color: #2E2E2E;
+            margin-bottom: 40px;
+        }
+        .custom-form {
+            .form-group {
+                margin-bottom: 30px;
+            }
+            .custom-control{
+                border: 1px solid rgba(174, 174, 174, 0.2);
+                border-radius: 8px;
+                height: 45px;
+                font-size: 14px;
+                box-shadow: none;
+                color: #AEAEAE;
+            }
+            .custom-select {
+                border: 1px solid rgba(174, 174, 174, 0.2);
+                border-radius: 8px;
+                height: 45px;
+                font-size: 14px;
+                box-shadow: none;
+                color: #AEAEAE;
+            }
+            .custom-check-label{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 25px;
+                color: #2E2E2E;
+                margin: 0px 0px 0px 10px;
+                .custom-form-link {
+                    font-weight: 600;
+                    color: #F04D3C;
+                    text-decoration: underline;
+                }
+            }
+            .custom-check-box {
+                .form-check-input {
+                    width: 1.5em;
+                    height: 1.5em;
+                    box-shadow: none;
+                    border: 2px solid rgba(174, 174, 174, 0.2);
+                    &:focus {
+                        border: 2px solid rgba(174, 174, 174, 0.2);
+                    }
+                }
+            }
+            .custom-textarea {
+                textarea.form-control{
+                    border: 1px solid rgba(174, 174, 174, 0.2);
+                    border-radius: 8px;
+                    color: #AEAEAE;
+                    font-size: 15px;
+                    height: 100px;
+                }
+            }
+            .btn-submit{
+                background: linear-gradient(270deg, #F0562D 0%, #EE3272 100%);
+                border-radius: 16px;
+                color: #fff;
+                font-weight: 700;
+                font-size: 20px;
+                width: 100%;
+                line-height: 30px;
+                height: 55px;
+            }
+        }
+    }
+    .custom-card{
+        box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+        border-radius: 15px;
+        border: none;
+        position: relative;
+        bottom: -70px;
+        z-index: 9;
+    }
+}
+
+.blue-bg {
+    background: #041154;
+    padding: 20px;
+    height: 200px;
+    margin-top: -70px;
+    position: relative;
+    .template-demo {
+        z-index: 9;
+        position: relative;
+        margin: 20px 0px 0px 0px;
+    }
+    .btn-social-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1.5px solid #FFFFFF;
+        color: #fff;
+        font-size: 20px;
+        margin: 0px 10px 0px 0px;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            background: linear-gradient(270deg, #F0562D 0%, #EE3272 100%);
+            color: #fff;
+            border: none;
+        }
+    }
+    .round-shape{
+        img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .dot-border-shape{
+        img {
+            position: absolute;
+            left: 11%;
+            bottom: 0;
+        }
+    }
+
+    .social-media-box {
+        display: flex;
+        position: relative;
+        z-index: 9;
+        margin: 30px 0px 0px 0px;
+        .gmail-box {
+            margin: 0px 20px 0px 0px;
+            display: flex;
+            .gmail-icon {
+                img {
+                    margin: 0px 10px 0px 0px;
+                }
+            }
+            .email-link {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: lowercase;
+                color: #FFFFFF;
+            }
+        }
+        .skype-box {
+            margin: 0px 20px 0px 0px;
+            display: flex;
+            .skype-icon {
+                img {
+                    margin: 0px 10px 0px 0px;
+                }
+            }
+            .skype-link {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: lowercase;
+                color: #FFFFFF;
+            }
+        }
+        .whatsapp-box {
+            margin: 0px 20px 0px 0px;
+            display: flex;
+            .whatsapp-icon {
+                img {
+                    margin: 0px 10px 0px 0px;
+                }
+            }
+            .whatsapp-link {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: lowercase;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media (max-width: $large-laptop) {
+    .get-in-touch {
+        .title-section {
+            .get-in-touch-tilte{
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: $laptop) {
+    .get-in-touch {
+        .title-section {
+            margin: 0px 0px 0px 20px;
+        }
+
+        .call-section {
+            .call-text {
+                max-width: 88%;
+            }
+        } 
+    }
+
+    .blue-bg {
+        .dot-border-shape {
+            img {
+                left: 0%;
+            }
+        }
+        .social-media-box {
+            .gmail-box {
+                .email-link {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+            .skype-box {
+                .skype-link {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+            .whatsapp-box {
+                .whatsapp-link {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: $ipad-pro) {
+    .get-in-touch {
+        .title-section {
+            .get-in-touch-tilte{
+                font-size: 34px;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+@media (max-width: $extra-small-laptop) {   
+    .get-in-touch {
+        .custom-card {
+            bottom: -30px;
+        }
+    }
+}
+
+@media (max-width: $ipad-landscape) {   
+    .get-in-touch {
+        .title-section {
+            p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+        .get-in-touch-form {
+            padding: 40px 30px;
+            .custom-form {
+                .custom-check-label {
+                    font-size: 14px;
+                    line-height: 23px;
+                }
+            }
+        }
+
+        .call-section {
+            .call-text {
+                max-width: 100%;
+                margin: 0 auto;
+                font-size: 14px;
+                line-height: 25px;
+                margin-bottom: 20px;
+            }
+        } 
+
+        .chat-section {
+            .chat-text {
+                max-width: 100%;
+                font-size: 14px;
+                line-height: 25px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        } 
+    }  
+    
+    .blue-bg {
+        margin-top: -30px;
+    }
+    .social-media-box {
+        .gmail-box {
+            .gmail-icon {
+                width: 20px;
+                height: 20px;
+                margin: 0px 10px 0px 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-portrait) {   
+    .get-in-touch {
+        padding: 100px 0 70px;
+        .title-section {
+            .get-in-touch-dec {
+                &:before {
+                    margin: 0px 20px 0px 0px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+        .call-section {
+            text-align: center;
+            .call-icon {
+                margin: 0 auto 20px;
+            }
+        }
+        .chat-section {
+            text-align: center;
+            .chat-icon {
+                margin: 0 auto 20px;
+            }
+            .chat-text {
+                max-width: 70%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
+        .custom-card {
+            bottom: 0;
+            margin: 30px 0px;
+        }
+    }
+
+    .blue-bg {
+        height: auto;
+        margin-top: 0px;
+        .btn-social-icon {
+            margin-bottom: 20px;
+        }
+        .social-media-box {
+            margin: 0px 0px 0px 0px;
+        }
+        .dot-border-shape {
+            display: none;
+        }
+    }    
+}
+
+@media (max-width: $small-mobile) {  
+    .get-in-touch {
+        padding: 70px 0 70px;
+        .title-section {
+            .get-in-touch-dec {
+                &:before {
+                    margin: 0px 20px 0px 0px;
+                }
+            }
+            .get-in-touch-tilte {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+        .call-section {
+            text-align: center;
+            .call-icon {
+                margin: 0 auto 20px;
+            }
+            .call-text {
+                max-width: 100%;
+            } 
+        }
+        .chat-section {
+            text-align: center;
+            .chat-icon {
+                margin: 0 auto 20px;
+            }
+            .chat-text {
+                max-width: 70%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
+        .custom-card {
+            bottom: 0;
+            margin: 30px 0px;
+        }
+    }  
+    
+    .blue-bg {
+        height: auto;
+        margin-top: 0px;
+        .btn-social-icon {
+            margin-bottom: 20px;
+        }
+        .social-media-box {
+            display: block;
+            margin: 0px 0px 0px 10px;
+            .gmail-box {
+                margin: 0px 0px 20px 0px;
+            }
+            .skype-box {
+                margin: 0px 0px 20px 0px;
+            }
+        }
+        .dot-border-shape {
+            display: none;
+        }
+    }    
+}

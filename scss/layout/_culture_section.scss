@@ -1,0 +1,56 @@
+.culture-section{
+    padding: 100px 0;
+    background: #FFF6F8;
+    .first-text{
+        max-width: 36%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    img{
+        height: auto;
+        width: auto;
+    }
+    .culture-carousel {
+        padding-left: 150px;
+        img{
+            height: auto;
+            width: auto;
+            margin-bottom: 30px;
+        }
+        .d-flex{
+            justify-content: space-between;
+            img{
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: $laptop) {
+    .culture-section {
+        .culture-carousel{
+            padding-left: 100px;
+        }
+    }
+}
+
+
+@media (max-width: $ipad-portrait) {
+    .culture-section {
+        .first-text{
+            max-width: 73%;
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .culture-section {
+        .first-text{
+            max-width: 95%;
+        }
+        .culture-carousel{
+            padding-left: 30px;
+        }
+    }
+}

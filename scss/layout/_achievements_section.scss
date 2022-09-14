@@ -1,0 +1,129 @@
+.achievements-section{
+    padding: 0 0 100px;
+    .achievements-card{
+        border: 1px solid rgba(27, 43, 124, 0.05);
+        border-radius: 16px;
+        padding: 30px 30px;
+        transition: all 0.3s;
+        h4{
+            font-size: 24px;
+            color: #2E2E2E;
+            padding: 30px 0 20px;
+            margin: 0;
+            line-height: normal;
+        }
+        p{
+            margin: 0;
+        }
+        &:hover{
+            background: #FFFFFF;
+            box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+            border-radius: 16px;
+        }
+    }
+    .achievements-carousel{
+        img{
+            width: auto;
+        }
+        .owl-stage-outer{
+            padding: 0 20px 20px 20px;
+            margin-left: -30px;
+        }
+    }
+    .first-text{
+        margin: 0 0 30px;
+    }
+    .achievements-slider{
+        position: relative;
+        .achievements-nav {
+            position: absolute;
+            right: 0;
+            bottom: -60px;
+            margin: 0 auto;
+            .achievements-slider-next {
+                background: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                // padding: 11px 15px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                margin: 0px 0px 0px 10px;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                line-height: 50px;
+                i {
+                    color: #EE3F59;
+                }
+                &:hover, &:focus {
+                    background: linear-gradient(219.67deg, #EE3F59 41.87%, #F04D3C 93.99%);
+                    i {
+                        color: #ffffff;
+                        
+                    }
+                }
+            }
+    
+            .achievements-slider-prev {
+                background: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                // padding: 11px 15px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                line-height: 50px;
+                i {
+                    color: #EE3F59;
+                }
+                &:hover, &:focus {
+                    background: linear-gradient(219.67deg, #EE3F59 41.87%, #F04D3C 93.99%);
+                    i {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: $large-laptop) {
+    .achievements-section {
+        .achievements-card {
+            padding: 30px 20px;
+            h4{
+                font-size: 22px;
+                padding: 20px 0 15px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: $small-laptop) {
+    .achievements-section {
+        .achievements-card {
+            h4{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .achievements-section {
+        .achievements-carousel {
+            .owl-stage-outer{
+                margin-left: -20px;
+            }
+        }
+    }
+}

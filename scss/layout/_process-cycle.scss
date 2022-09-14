@@ -1,0 +1,241 @@
+.process-cycle {
+    padding: 50px 0px;
+    position: relative;
+    background: url(../img/testimonial/process-cycle-left-bg.svg) left center, url(../img/testimonial/process-cycle-right-bg.svg) top 30px right, #FFF6F8;
+    background-repeat: no-repeat; 
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .process-cycle-dec {
+        margin: 30px 0px 0px 0px;
+        p {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #2E2E2E;
+            max-width: 93%;
+        }
+    }
+
+        .process-cycle-box {
+            background: #FFFFFF;
+            box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.1);
+            border-radius: 16px;
+            padding: 20px 20px 0px;
+            margin-bottom: 20px;
+            display: flex;
+            align-self: center;
+            transition: all 0.5s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -webkit-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+            overflow: hidden;
+            position: relative;
+            .icon-section {
+                position: relative;
+                left: -10px ;
+                bottom: 0px;
+                width: 100%;
+                .team-icon {
+                    position: absolute;
+                    left: 13px;
+                    top: 20px;
+                    z-index: 9;
+                }
+                .services-icon {
+                    position: absolute;
+                    left: 20px;
+                    top: 20px;
+                    z-index: 9;
+                }
+                .rectangle-icon {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+                .pattern-icon {
+                    position: absolute;
+                    left: -20px;
+                    bottom: 30px;
+                }            
+            }
+            .text-section {
+                margin: 0px 0px -10px 0px;
+                h5 {
+                    font-family: 'Roboto Slab';
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    letter-spacing: 0.05em;
+                    text-transform: capitalize;
+                    color: #2E2E2E;
+                }
+                p {
+                    display: block;
+                    display: -webkit-box;
+                    font-family: 'Poppins';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: lowercase;
+                    color: #2E2E2E;
+                    max-width: 100%;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin: 0px;
+                }
+            }
+            &:nth-child(2) {
+                position: relative;
+                left: 100px;
+            }
+            &:hover, &:focus {
+                background: linear-gradient(110.87deg, #EE3E5A -2.48%, #EE3F59 37.75%, #F04D3C 103.34%);
+                box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+                border-radius: 20px;
+                -moz-transition: all .2s ease-in-out;
+                -webkit-transition: all .2s ease-in-out;
+                -ms-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+                .text-section {
+                    margin: 0px 0px -10px 0px;
+                    h5 {
+                        color: #FFFFFF;
+                    }
+                    p {
+                        color: #FFFFFF;
+                    }
+                }
+                .circle-shapes{
+                    opacity: 1;
+                    // transition: all 0.5s ease-in-out;
+                    right: -80px;
+                    bottom: -80px;
+                    width: 45%;
+                }
+            }
+            .circle-shapes{
+                position: absolute;
+                bottom: -150px;
+                right: -150px;
+                opacity: 0;
+                transition: all 0.5s;
+            }
+        }
+    
+}
+
+
+@media (max-width: $large-laptop) {
+    .process-cycle {
+        .process-cycle-box {
+            .text-section {
+                p{
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                h5{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $laptop) {
+    .process-cycle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .process-cycle-box {
+            padding: 20px 20px 10px;
+            .icon-section {
+                width: 120%;
+                bottom: -10px;
+            }
+            .text-section {
+                h5 {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $extra-small-laptop) {
+    .process-cycle {
+        padding: 30px 10px;
+        .process-cycle-box {
+            .icon-section {
+                width: 150%;
+                bottom: -10px;
+            }
+            .text-section {
+                p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            } 
+        } 
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .process-cycle {
+        padding: 30px 10px;
+        .process-cycle-box {
+            .icon-section {
+                width: 140%;
+                bottom: -10px;
+            }
+            .text-section {
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            } 
+        } 
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .process-cycle {
+        padding: 100px 10px;
+        .process-cycle-box {
+            .icon-section {
+                width: 120%;
+                bottom: -10px;
+            }
+            .text-section {
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            } 
+        } 
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .process-cycle {
+        padding: 70px 10px;
+    }
+}
+
+@media (max-width: $small-mobile) {
+    .process-cycle {
+        padding: 70px 10px;
+    }
+}

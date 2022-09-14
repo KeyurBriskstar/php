@@ -1,0 +1,48 @@
+.development-technologies-section{
+    padding: 120px 0 0;
+    .custom-card {
+        .technologies-box-ul{
+            justify-content: flex-start;
+        }
+        .technologies-work-box {
+            p{
+                min-height: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: $large-laptop) {
+    .development-technologies-section {
+        .custom-card {
+            .technologies-box-ul {
+                li {
+                    h5{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $extra-small-laptop) {
+    .development-technologies-section {
+        .custom-card {
+            .card-body{
+                min-height: 430px;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .development-technologies-section {
+        .custom-card {
+            min-height: 360px;
+            .card-body{
+                min-height: auto;
+            }
+        }
+    }
+}

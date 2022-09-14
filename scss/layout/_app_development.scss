@@ -1,0 +1,142 @@
+.app-development{
+    padding: 0 0 100px;
+    overflow-x: hidden;
+    p{
+        padding: 0 0 20px;
+        max-width: 72%;
+    }
+    .content-blk{
+        padding-left: 100px;
+    }
+    // .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+    //     display: block;
+    // }
+    .ios-development-slider{
+        position: relative !important;
+        .ios-development-nav {
+            position: absolute;
+            right: 0;
+            bottom: -50px;
+            margin: 0 auto;
+            .ios-development-next {
+                background: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                margin: 0px 0px 0px 10px;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                line-height: 50px;
+                i {
+                    color: #EE3F59;
+                }
+                &:hover, &:focus {
+                    background: linear-gradient(219.67deg, #EE3F59 41.87%, #F04D3C 93.99%);
+                    i {
+                        color: #ffffff;
+                    }
+                }
+            }
+    
+            .ios-development-prev {
+                background: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                display: inline-block;
+                text-align: center;
+                line-height: 50px;
+                cursor: pointer;
+                i {
+                    color: #EE3F59;
+                }
+                &:hover, &:focus {
+                    background: linear-gradient(219.67deg, #EE3F59 41.87%, #F04D3C 93.99%);
+                    i {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .owl-stage-outer{
+            margin-left: -120px;
+        }
+    }
+    
+}
+
+
+@media (max-width: $ipad-pro) {
+    .app-development {
+        .content-blk{
+            padding-left: 50px;
+        }
+        p{
+            max-width: 90%;
+        }
+    }
+}
+
+@media (max-width: $extra-small-laptop) {
+    .app-development {
+        .ios-development-slider {
+            .owl-stage-outer{
+                margin-left: -100px;
+            }
+        }
+        p{
+            max-width: 91%;
+        }
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .app-development {
+        padding: 50px 0 100px;
+        .content-blk{
+            padding-left: 50px;
+        }
+        p{
+            max-width: 95%;
+        }
+        .ios-development-slider {
+            .owl-stage-outer{
+                margin-left: -220px;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .app-development {
+        .content-blk{
+            padding-top: 90px;
+        }
+        .ios-development-slider {
+            .ios-development-nav{
+                right: 30px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: $large-mobile) {
+    .app-development {
+        .content-blk{
+            padding-left: 30px;
+        }
+        .ios-development-slider {
+            .ios-development-nav{
+                right: 20px;
+            }
+        }
+    }
+}

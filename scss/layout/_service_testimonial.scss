@@ -1,0 +1,181 @@
+.service-testimonial-section{
+    padding: 90px 0 100px;
+    // background: url(../img/services-page/about-briskstar.jpg) no-repeat center center;
+    background: linear-gradient(90deg, rgba(27, 43, 124, 0.4) 16.15%, rgba(27, 43, 124, 0) 100%), url(../img/services-page/about-briskstar.jpg) no-repeat center center;
+    position: relative;
+    background-size: cover;
+    .service-testimonial-bottom{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .top-line{
+        position: absolute;
+        top: 0;
+        left: 10%;
+    }
+    .testimonial-card{
+        background: #FFFFFF;
+        border-radius: 20px;
+        padding: 60px 36px;
+        position: relative;
+        h3{
+            font-style: normal;
+            font-size: 24px;
+            line-height: 36px;
+            color: #292930;
+            font-family: "Poppins", sans-serif;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #989898;
+            font-family: "Poppins", sans-serif;
+        }
+        p{
+            color: #292930;
+        }
+        .client-img{
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            width: auto;
+            border-radius: 50%;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: 40px;
+            width: 100px;
+            height: 100px;
+            background: url(../img/services-page/quotes.svg) no-repeat;
+        }
+    }
+    .item{
+        padding-top: 50px;
+    }
+    h5{
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $white;
+        position: relative;
+        padding-left: 20px;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 2px;
+            border: 2px solid #EE3F59;
+            border-radius: 50px;
+            margin: 0px 20px 0px 0;
+        }
+    }
+    h2{
+        font-size: 52px;
+        line-height: 62px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: $white;
+    }
+    p{
+        color: $white;
+        padding: 0 0 10px;
+    }
+
+    .service-testimonial-slider{
+        position: relative !important;
+        
+        .service-testimonial-nav {
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+            margin: 0 auto;
+            .service-testimonial-next {
+                background: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                // padding: 11px 15px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                margin: 0px 0px 0px 10px;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                line-height: 50px;
+                i {
+                    color: #EE3F59;
+                }
+                &:hover, &:focus {
+                    background: linear-gradient(219.67deg, #EE3F59 41.87%, #F04D3C 93.99%);
+                    i {
+                        color: #ffffff;
+                        
+                    }
+                }
+            }
+    
+            .service-testimonial-prev {
+                background: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                // padding: 11px 15px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                line-height: 50px;
+                i {
+                    color: #EE3F59;
+                }
+                &:hover, &:focus {
+                    background: linear-gradient(219.67deg, #EE3F59 41.87%, #F04D3C 93.99%);
+                    i {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    
+
+ }
+
+
+ 
+ @media (max-width: $large-laptop) {
+    .service-testimonial-section {
+        padding: 90px 0 70px;
+        h2{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .top-line{
+            left: 0;
+        }
+    }
+}
+
+
+
+@media (max-width: $large-mobile) {
+    .service-testimonial-section {
+        .top-line{
+            display: none;
+        }
+        .service-testimonial-slider{
+            margin-top: 50px;
+        }
+    }
+}
+

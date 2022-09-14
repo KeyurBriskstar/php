@@ -1,0 +1,393 @@
+.b-culture-verticle {
+	counter-reset: section;
+	overflow: hidden;
+	.jumpmenu-sidebar {
+		position: fixed;
+		top: 0rem;
+		left: 0;
+		z-index: 2;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+		width: 17.625rem;
+		padding: 0;
+		display: none;
+		bottom: 0;
+		margin: auto;
+		&.active {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+		ul {
+			width: 100%;
+			height: 100%;
+			overflow-y: auto;
+		}
+		li {
+			a {
+				color: rgba(255,255,255,.5);
+				padding: 0.9375rem 0.9375rem 0.9375rem 2.5rem;
+				display: block;
+				border-bottom: 0.0625rem solid rgba(255,255,255,.5);
+				position: relative;
+				&::after {
+					position: absolute;
+					content: "";
+					right: 0;
+					top: 1.25rem;
+					bottom: 1.25rem;
+					width: 3px;
+					background-color: #fff;
+					opacity: 0;
+					-webkit-transition: all ease-in .3s;
+					-o-transition: all ease-in .3s;
+					transition: all ease-in .3s;
+				}
+				&.active {
+					color: #fff;
+					&::after {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			top: 0;
+			bottom: 0;
+			border-right: 0.0625rem solid rgba(255,255,255,.5);
+			right: 0;
+			height: 100vh;
+		}
+	}
+	&.not-list {
+		.b-culture-outer {
+			&::before {
+				display: none;
+			}
+		}
+	}
+	.b-culture-outer {
+		position: relative;
+        width: 100%;
+		&::before {
+			position: absolute;
+			content: "";
+			background: url(../img/our-work-page/ourwork-shade.svg) no-repeat;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			background-size: cover;
+            background-position: center right;
+		}
+	}
+}
+
+.b-culture-verticle .jumpmenu-sidebar li a, .case-study-full .content .cs-contain, .faq-outer .accordian-text p, .faq-outer.accordian-refine .accordian-text p, .section-paragraph p, .table-technical-stack table td, .text-18 {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+}
+
+.b-culture-verticle {
+    .b-culture-outer {
+        &:after {
+            counter-increment: section;
+            content: counter(section);
+            position: absolute;
+            bottom: 3.125rem;
+            right: 3.125rem;
+            font-size: 12.5rem;
+            color: rgba(255, 255, 255, 0.5);
+            z-index: 2;
+        }
+    }
+}
+
+.verticle-tabs-slider-text {
+    h2 {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        position: relative;
+        padding: 0px 0px 20px 60px;
+
+        &:after {
+            content: '';
+            border: 2px solid #FFFFFF;
+            position: absolute;
+            width: 160px;
+            height: 0px;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin: 40px 0px 0px 0px;
+        max-width: 90%;
+    }
+
+    .verticle-tabs-btn {
+        position: relative;
+        cursor: pointer;
+        z-index: 9;
+        top: 40px;
+        span {
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 42px;
+            letter-spacing: 0.05em;
+            text-transform: capitalize;
+            color: rgba(255, 255, 255, 0.5);
+            padding: 0px 0px 0px 100px;
+            
+            &:before {
+                content: '';
+                border: 2px solid rgba(255, 255, 255, 0.5);
+                width: 50px;
+                height: 0px;
+                position: absolute;
+                left: 0;
+                top: 5px;
+            }
+        }
+
+        &:hover {
+            span {
+                color: rgba(255, 255, 255, 1);
+                &:before {
+                    border: 2px solid rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+}
+
+.verticle-tabs-icon-text {
+    margin: 60px 0px -100px 0px;
+}
+
+.verticle-tabs-icon-text {
+    .verticle-tabs-icon {
+        background: #FFFFFF;
+        box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        padding: 16px 5px;
+        vertical-align: middle;
+        margin: 0 auto 20px;
+    }
+    p {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+}
+
+
+@media (max-width: $laptop) {
+
+    .b-culture-verticle {
+        .b-culture-outer {
+            &:after {
+                font-size: 9rem;
+            }
+        }
+    }
+
+    .verticle-tabs-slider-text {
+        h3 {
+            font-size: 40px;
+            max-width: 90%;
+            margin: 30px 0px -10px 0px;
+        }
+
+        .verticle-tabs-btn{
+            span {
+                font-size: 25px;
+                line-height: 30px;
+            }
+        } 
+    }
+
+    .verticle-tabs-icon-text {
+        margin: 60px 0px -60px 0px;
+        .verticle-tabs-icon {
+            margin: 0 auto 10px;
+        }
+    }
+}
+
+@media (max-width: $ipad-pro)  {
+    .verticle-tabs-slider-text {
+        h3 {
+            font-size: 30px;
+            max-width: 100%;
+            margin: 50px 0px 10px 0px;
+            line-height: 40px;
+        }
+    }
+
+    .verticle-tabs-icon-text {
+        margin: 60px 0px -120px 0px;
+    }
+}
+
+@media (max-width: $extra-small-laptop) {
+    .verticle-tabs-slider-text {
+        h3 {
+            font-size: 30px;
+            max-width: 100%;
+            margin: 30px 0px -10px 0px;
+            line-height: 40px;
+        }
+
+        .verticle-tabs-btn {
+            span {
+                font-size: 25px;
+                line-height: 30px;
+                padding: 0px 0px 0px 70px;
+                &:before {
+                    top: 8px;
+                }
+            }
+            
+        } 
+    }
+
+    .verticle-tabs-icon-text {
+        margin: 140px 0px -120px 0px;
+    }
+
+}
+
+@media (min-width: 1020px) and (max-width: 1025px) {
+    .offset-lg-3 {
+        margin-left: 28%;
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .verticle-tabs-icon-text {
+        margin: 90px 0px -120px 0px;
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .verticle-tabs-slider-text {
+        h3 {
+            font-size: 30px;
+            max-width: 90%;
+            margin: 30px 0px -10px 0px;
+            line-height: 40px;
+        }
+
+        .verticle-tabs-img {
+            margin: 50px 0px -50px -30px;
+        }
+    } 
+
+    .verticle-tabs-icon-text {
+        margin: 90px 0px -110px 0px;
+    }
+}
+
+@media (min-width: 818px) and (max-width: 822px) {
+    .verticle-tabs-icon-text {
+        margin: 150px 0px -200px 0px;
+    }
+}
+
+
+@media (max-width: $large-mobile) {
+    .b-culture-verticle {
+        .b-culture-outer {
+            &:before {
+                font-size: 5.625rem;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: $small-mobile) {
+    .b-culture-verticle {
+        .jumpmenu-sidebar {
+            display: none;
+            &.active{
+                display: none;
+            }
+        }
+
+        .b-culture-outer {
+            &:after {
+                font-size: 5rem;
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    }
+
+    .verticle-tabs-slider-text {
+        h3 {
+            font-size: 30px;
+            max-width: 90%;
+            margin: 30px 0px -10px 0px;
+            line-height: 40px;
+            max-width: 100%;
+        }
+
+        .verticle-tabs-img {
+            margin: 50px 0px 0px 0px;
+        }
+
+        .verticle-tabs-btn {
+            span {
+                padding: 0px 0px 0px 70px;
+            }
+        }
+    } 
+
+    .verticle-tabs-icon-text {
+
+        .verticle-tabs-icon {
+            margin: 0 auto 10px;
+        }
+
+        p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 25px;
+        }
+    } 
+
+    .verticle-tabs-icon-text {
+        margin: 40px 0px -130px 0px;
+    }
+
+
+}

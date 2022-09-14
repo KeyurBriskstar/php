@@ -1,0 +1,13 @@
+.map-section{
+    iframe{
+        filter: grayscale(100%);
+        
+    }
+}
+@media (max-width: $ipad-portrait) {
+    .map-section{
+        iframe{
+            height: 300px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.development-company-section{
+    padding: 100px 0 0;
+    background: url(../img/technology-detail-page/development-company-bg.svg) no-repeat top 100px right;
+}
+
+@media (max-width: $extra-small-laptop) {
+    .development-company-section{
+        background-size: 10%;
+    }
+}

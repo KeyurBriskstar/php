@@ -1,0 +1,214 @@
+.comments-title {
+    h3 {
+        font-weight: $font-bold;
+        font-size: 28px;
+        line-height: 37px;
+        color: $theme-blue;
+        margin-bottom: 30px;
+    }
+}
+.comments-section {
+    display: flex;
+    padding: 10px 0px;
+
+    .comments-section-img {
+        width: auto;
+    }
+
+    .comments-section-text {
+        width: auto;
+        margin: 10px 0px 0px 15px;
+
+        h5 {
+            font-weight: $font-bold;
+            font-size: 20px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: $text-color;
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: $theme-blue;
+            margin: 0px 0px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            text-transform: capitalize;
+            color: $text-color;
+            margin: 20px 0px;
+            max-width: 92%;
+        }
+
+        .reply-btn {
+            background: linear-gradient(92.69deg, #EE3E5A 0%, #F04D3C 100%);
+            border: 1px solid #EE3F59;
+            border-radius: 50px;
+            font-weight: $font-semibold;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            width: 130px;
+            height: 42px;
+
+            span {
+                margin: 0px 0px 0px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-pro) {
+    .comments-title {
+        h3 {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .comments-section {
+        .comments-section-img {
+            width: 13%;
+        }
+
+        .comments-section-text {
+            width: auto;
+            margin: 0px 0px 0px 15px;
+
+            .reply-btn {
+                font-size: 18px;
+                line-height: 27px;
+                width: 120px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                margin: 10px 0px;
+                max-width: 92%;
+            }
+        }
+    }
+
+}
+
+@media (max-width: $extra-small-laptop) {
+    .comments-section {
+        .comments-section-img {
+            width: 20%;
+        }
+
+        .comments-section-text {
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                margin: 10px 0px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .comments-title {
+        h3 {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .comments-section {
+        .comments-section-img {
+            width: 20%;
+        }
+
+        .comments-section-text {
+            width: auto;
+            margin: 0px 0px 0px 15px;
+
+            .reply-btn {
+                font-size: 18px;
+                line-height: 27px;
+                width: 120px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                margin: 10px 0px;
+                max-width: 100%;
+            }
+        }
+    }
+
+    
+}
+
+@media (max-width: $ipad-portrait) {
+    .comments-title {
+        h3 {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .comments-section {
+        .comments-section-text {
+            width: auto;
+            margin: 0px 0px 0px 15px;
+
+            .reply-btn {
+                font-size: 18px;
+                line-height: 27px;
+                width: 120px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                margin: 10px 0px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: $small-mobile) {
+    .comments-title h3 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .comments-section {
+        .comments-section-img {
+            width: 100%;
+        }
+        
+        .comments-section-text {
+            margin: 0px 0px 0px 10px;
+
+            .reply-btn {
+                font-size: 18px;
+                line-height: 25px;
+                width: 120px;
+            }
+
+            p {
+                margin: 10px 0px;
+                max-width: 100%;
+            }
+
+        }
+    }
+}

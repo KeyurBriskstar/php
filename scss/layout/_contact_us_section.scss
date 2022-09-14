@@ -1,0 +1,111 @@
+.contact-us-section{
+    padding: 100px 0 0;
+    transition: all 0.5s;
+    .contact-card{
+        background: #FFFFFF;
+        box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.16);
+        border-radius: 16px;
+        padding: 30px 30px;
+        text-align: center;
+        transition: all 0.5s;
+        height: 100%;
+        position: relative;
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+         h4{
+            font-size: 42px;
+            line-height: 55px;
+            text-align: center;
+            text-transform: capitalize;
+            color: $theme-blue;
+            margin: 20px 0 10px 0;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        p{
+            max-width: 66%;
+            margin: 0 auto;
+        }
+        .logo-light-shape{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+            height: 100%;
+            width: 100%;
+        }
+        &:hover{
+            background: $theme-gradient;
+            transition: all 1s ease-in-out;
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+             h4{
+                color: $white;
+            }
+            p{
+                color: $white;
+            }
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .first-text{
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 40px 0 40px 40px;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: $large-laptop) {
+    .contact-us-section {
+        .contact-card {
+            p{
+                max-width: 100%;
+            }
+            h4{
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .contact-us-section {
+        .contact-card{
+            max-height: 290px;
+            min-height: 290px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .contact-us-section {
+        .contact-card{
+            max-height: 240px;
+            min-height: 240px;
+            margin-bottom: 30px;
+            h4{
+                font-size: 30px;
+                margin: 10px 0 0 0;
+            }
+            p{
+                margin: 0;
+            }
+        }
+        .first-text{
+            border-left: none;
+            padding: 20px 0 0 0;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.perks-section{
+    padding: 100px 0 0;
+    h2{
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    .perks-card{
+        background: #FFFFFF;
+        box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+        border-radius: 16px;
+        margin-bottom: 30px;
+        padding: 40px 40px;
+        h4{
+            font-weight: $font-medium;
+            font-size: 24px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: $theme-blue;
+            margin: 20px 0;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: $small-laptop) {
+    .perks-section {
+        .perks-card{
+            padding: 40px 30px;
+        }
+    }
+}
+
+@media (max-width: $extra-small-laptop) {
+    .perks-section {
+        .perks-card{
+            height: 100%;
+            min-height: 300px;
+            max-height: 300px;
+            h4{
+                line-height: normal;
+                font-size: 22px;
+            }
+        }
+    }
+}

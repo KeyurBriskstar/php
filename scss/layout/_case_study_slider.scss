@@ -1,0 +1,132 @@
+.case-study-slider{
+    background-color: $theme-pink;
+    padding: 100px 0;
+    background: url(../img/case-study-page/case-study-bg.png) no-repeat;
+    background-size: cover;
+    h2{
+        font-size: 52px;
+        line-height: 62px;
+        color: $white;
+        padding-bottom: 10px;
+    }
+    .content-main{
+        position: relative;
+        h3{
+            position: absolute;
+            top: -120px;
+            right: 0;
+            font-size: 150px;
+            color: rgba(205, 56, 44, 0.5);
+            line-height: normal;
+        }
+    }
+    p{
+        color: $white;
+        padding-bottom: 50px;
+    }
+    .theme-btn{
+        background: transparent;
+        box-shadow: none;
+        border: 2px solid $white;
+        padding: 11px 60px;
+        cursor: pointer;
+    }
+    .content-blk{
+        padding-left: 130px;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            height: 4px;
+            width: 100px;
+            background-color: $white;
+            border-radius: 8px;
+        }
+    }
+    .slider-counter{
+        margin: 0 auto 0 auto;
+        text-align: center;
+        font-size: 20px;
+        color: $white;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            background: url(../img/case-study-page/case-study-slider-arrows.svg) no-repeat center center;
+            height: 100%;
+            width: 100%;
+            transform: translateX(-50%);
+            
+        }
+    }
+    .owl-stage-outer{
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: $large-laptop) {
+    .case-study-slider {
+        h2{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .theme-btn{
+            padding: 10px 40px;
+        }
+    }
+}
+
+
+@media (max-width: $small-laptop) {
+    .case-study-slider {
+        .content-main {
+            h3{
+                top: -70px;
+                font-size: 100px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: $ipad-portrait) {
+    .case-study-slider {
+        .content-blk{
+            margin-bottom: 50px;
+        }
+        h2{
+            font-size: 34px;
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .case-study-slider {
+        .content-blk{
+            padding-left: 60px;
+            &:after{
+                width: 30px;
+            }
+        }
+        .theme-btn{
+            padding: 10px 30px;
+        }
+        p{
+            padding-bottom: 20px;
+        }
+        .content-main {
+            h3{
+                font-size: 80px;
+            }
+        }
+        .slider-counter{
+            &:after{
+                background-size: 60%;
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.zigzag-section{
+    padding: 0 0 100px;
+    h3{
+        font-size: 42px;
+        color: #292930;
+        padding: 0 0 20px;
+    }
+    ul{
+        li{
+            position: relative;
+            padding: 0 0 15px 30px;
+            font-size: 18px;
+            color: #2E2E2E;
+            &:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 5px;
+                height: 17px;
+                width: 17px;
+                background: url(../img/our-work-detail/title-ellipse.svg) no-repeat;
+            }
+        }
+    }
+    .first-text{
+        max-width: 38%;
+        margin: 0 auto 60px;
+        text-align: center;
+    }
+    .content-blk{
+        padding-left: 70px;
+    }
+}
+
+@media (max-width: $large-laptop) {
+    .zigzag-section {
+        h3{
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+}
+
+@media (max-width: $laptop) {
+    .zigzag-section {
+        .first-text{
+            max-width: 50%;
+        }
+    }
+}
+
+@media (max-width: $ipad-pro) {
+    .zigzag-section {
+        .first-text{
+            max-width: 50%;
+        }
+        h3{
+            font-size: 34px;
+            line-height: 45px;
+        }
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .zigzag-section {
+        .content-blk{
+            padding-left: 0;
+        }
+        h3{
+            font-size: 28px;
+        }
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .zigzag-section {
+        .first-text{
+            max-width: 85%;
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .zigzag-section {
+        .first-text{
+            max-width: 100%;
+        }
+    }
+}

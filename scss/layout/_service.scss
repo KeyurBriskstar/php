@@ -1,0 +1,229 @@
+.service-section{
+    padding: 100px 0;
+    background: url(../img/icon/service-circle-bg.png) center right, url(../img/testimonial-round-bg.svg) center left -60px repeat;
+    background-repeat: no-repeat;
+    .card{
+        padding: 35px 20px;
+        border: 0;
+        background: #FFFFFF;
+        border: 1px solid #F5F5F5;
+        box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+        border-radius: 20px;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+         margin-bottom: 40px;
+        overflow: hidden;
+        h5{
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 34px;
+            letter-spacing: 0.05em;
+            text-transform: capitalize;
+            color: #2E2E2E;
+            margin: 0;
+            padding: 0 0 20px;
+        }
+        p{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: lowercase;
+            color: #2E2E2E;
+        }
+        a{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 25px;
+            text-transform: lowercase;
+            color: #1B2B7C;
+            position: relative;
+            padding: 0 0 0 80px;
+            &:after{
+                content: "";
+                position: absolute;
+                top: 14px;
+                left: 0;
+                height: 2px;
+                width: 60px;
+                background: #1B2B7C;
+            }
+        }
+        &:hover{
+            background: linear-gradient(110.87deg, #EE3E5A -2.48%, #EE3F59 37.75%, #F04D3C 103.34%);
+            border: 1px solid #F5F5F5;
+            box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+            border-radius: 20px;
+            -moz-transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -ms-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;   
+            h5, p, a{
+                color: #fff;
+            }
+            a{
+                &:after{
+                    background: #fff;
+                }
+            }
+            .design-icon{
+                display: none;
+            }
+            .design-icon-white{
+                display: block;
+            }
+            .circle-shapes{
+                opacity: 1;
+                // transition: all 0.5s ease-in-out;
+                right: -90px;
+                bottom: -90px;
+                width: 70%;
+            }
+        }
+        .circle-shapes{
+            position: absolute;
+            bottom: -150px;
+            right: -150px;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+        .design-icon-white{
+            display: none;
+        }
+    }
+    .custom-title-primary{
+        padding: 0 0 70px;
+    }
+    p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #2E2E2E;
+
+    }
+}
+
+
+@media (max-width: $laptop) {
+    .service-section {
+        padding: 50px 0;
+        .card {
+            padding: 20px 20px;
+            // min-height: 320px;
+            h5 {
+                padding: 0 0 10px;
+            }
+            p {
+                font-size: 16px;
+            }
+            a {
+                padding: 0 0 0 50px;
+                &:after {
+                    width: 40px;
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: $small-laptop) {
+    .service-section {
+        .card{
+            min-height: 280px;
+            h5{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: $extra-small-laptop) {
+    .service-section {
+        .card {
+            min-height: 370px;
+            a {
+                padding: 0 0 0 40px;
+                font-size: 18px;
+                line-height: 25px;
+
+                &:after {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .service-section {
+        p {
+            font-size: 18px;
+        }
+        .card {
+            h5 {
+                letter-spacing: 0;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            a {
+                font-size: 17px;
+            }
+            &:hover {
+                .circle-shapes {
+                    right: -110px;
+                    bottom: -110px;
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: $ipad-portrait) {
+    .service-section {
+        padding: 100px 0;
+        .custom-title-primary {
+            padding: 0 0 20px;
+        }
+        .card {
+            min-height: auto;
+            margin: 0;
+            a {
+                font-size: 18px;
+                line-height: 25px;
+                padding: 0 0 0 60px;
+                &:after {
+                    width: 40px;
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: normal;
+        }
+    }
+}
+
+@media (max-width: $small-mobile) {
+    .service-section {
+        padding: 70px 0;
+        .custom-title-primary {
+            padding: 0 0 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: normal;
+        }
+    }    
+}

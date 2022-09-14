@@ -1,0 +1,300 @@
+.footer {
+    padding: 50px 0px 10px;
+    position: relative;
+    background: url(../img/testimonial/testimonial-round-bg.svg) left center, url(../img/testimonial/testimonial-round-border.svg) right center;
+    background-repeat: no-repeat;   
+    .widget-box {
+        h3 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 34px;
+            color: #1B2B7C;
+        }
+    }
+
+    hr {
+        opacity: 1;
+        border: 1px solid #EFEFEF;
+    }
+
+    .widget-box-text {
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            li {
+                @include body-text;
+                line-height: 36px;
+                a {
+                    color: #2E2E2E;
+                    &:hover, &:focus {
+                        color: #F0562D;
+                    }
+                }
+            }
+        }
+    }
+
+    .clock-box {
+        .india-clock {
+            h4{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 40px;
+                color: #2E2E2E;
+            }
+            p{
+                @include body-text;
+                color: #2E2E2E;
+                max-width: 90%;
+                margin: 0px;
+            }
+        }
+        .europe-clock {
+            h4{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 40px;
+                color: #2E2E2E;
+            }
+            p{
+                @include body-text;
+                color: #2E2E2E;
+                margin: 0px;
+                a {
+                    color: #2E2E2E;
+                    cursor: pointer;
+                    font-weight: 700;
+                }
+            }
+        }
+        .canada-clock {
+            h4{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 40px;
+                color: #2E2E2E;
+            }
+            p{
+                @include body-text;
+                color: #2E2E2E;
+                margin: 0px;
+                a {
+                    color: #2E2E2E;
+                    cursor: pointer;
+                    font-weight: 700;
+                }
+            }
+        }
+        .united-clock {
+            h4{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 40px;
+                color: #2E2E2E;
+            }
+            p{
+                @include body-text;
+                color: #2E2E2E;
+                margin: 0px;
+                a {
+                    color: #2E2E2E;
+                    cursor: pointer;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .copyright-box {
+        .copyright-text {
+            @include body-text;
+            color: #2E2E2E;
+        }
+        .copyright-ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            text-align: center;
+            li {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 0px;
+                display: inline-block;
+                a {
+                    color: #041154;
+                    border-right: 2px solid #041154;
+                    margin: 0px 0px 0px 6px;
+                    padding: 0px 10px 0px 0px;
+                    &:hover, &:focus {
+                        color: #F0562D;
+                    }
+                }
+                &:last-child{
+                    a {
+                        border: none;
+                    }
+                    
+                }
+            }
+        }
+        .copyright-icon {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            text-align: center;
+            li {
+                display: inline-block;
+                margin: -20px 0px 0px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: $laptop) {
+    .footer {
+        .widget-box {
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+                min-height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: $extra-small-laptop) {
+    .footer {
+        .widget-box {
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+                min-height: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .footer {
+        .widget-box {
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+                min-height: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .footer {
+        background: none;
+        .widget-box {
+            margin-bottom: 20px;
+
+            h3 {
+                min-height: 30px;
+            }
+        }
+        .india-clock {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .clock-box {
+            .india-clock {
+                p {
+                    margin: 0 auto;
+                }
+            }
+            .europe-clock {
+                p {
+                    margin: 0 auto;
+                }
+            }
+            .canada-clock {
+                p {
+                    margin: 0 auto;
+                }
+            }
+            .united-clock {
+                p {
+                    margin: 0 auto;
+                }
+            }
+        }
+        .europe-clock {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .canada-clock {
+            text-align: center;
+        }
+        .united-clock {
+            text-align: center;
+        }
+        .copyright-box {
+            .copyright-ul {
+                margin: 0px 0px 20px 0px;
+                li {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .copyright-text {
+                margin-bottom: 30px;
+                text-align: center;
+            }
+        }
+    }    
+}
+
+@media (max-width: $small-mobile) {
+    .footer {
+        background: none;
+        .widget-box {
+            margin-bottom: 20px;
+        }
+        .india-clock {
+            text-align: center;
+        }
+        .clock-box {
+            .india-clock {
+                p {
+                    margin: 0 auto;
+                }
+            }
+            .europe-clock {
+                p {
+                    margin: 0 auto;
+                }
+            }
+            .canada-clock {
+                p {
+                    margin: 0 auto;
+                }
+            }
+            .united-clock {
+                p {
+                    margin: 0 auto;
+                }
+            }
+        }
+        .europe-clock {
+            text-align: center;
+        }
+        .canada-clock {
+            text-align: center;
+        }
+        .united-clock {
+            text-align: center;
+        }
+        .copyright-box {
+            .copyright-ul {
+                margin: 0px 0px 20px 0px;
+            }
+        }
+    }    
+}

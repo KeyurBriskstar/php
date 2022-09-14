@@ -1,0 +1,59 @@
+.our-work-detail-hero-section{
+    padding-bottom: 0;
+    p{
+        padding: 0;
+    }
+    h3{
+        padding-bottom: 10px;
+    }
+    ul{
+        display: flex;
+        li{
+            background: $white;
+            margin-right: 10px;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+    }
+
+    
+}
+
+// .tooltip {
+//     font-family: Sora, sans-serif;
+//     font-weight: 300;
+//     line-height: 1.4;
+//     font-size: 0.8rem;
+// }
+.bs-tooltip-top .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
+    border-top-color: $theme-pink;
+}
+
+.tooltip-inner {
+    color: #fff;
+    background-color: $theme-pink;
+}
+
+
+@media (max-width: $small-laptop) {
+    .our-work-detail-hero-section{
+        padding-bottom: 60px;
+    }
+}
+@media (max-width: $ipad-portrait) {
+    .our-work-detail-hero-section {
+        ul {
+            li{
+                img{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,426 @@
+.our-services{
+    padding: 100px 0;
+    background: #FFF6F8;
+
+    .client-review-slider {
+        position: relative;
+        h5 {
+            font-family: 'Roboto Slab';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: #EE3F59;
+            margin-bottom: 30px;
+        }
+        .client-review-carousel {
+            .card {
+                background: none;
+                border: none;
+                border-radius: 0px;
+            }
+            .client-review-box {
+                .client-review-img {
+                    text-align: center;
+                    min-height: 50px;
+                    img {
+                        width: auto;
+                    }
+
+                    .client-review-ul {
+                        margin: 15px 0px 10px;
+                        padding: 0px 0px;
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        li {
+                            display: inline-block;
+                            span {
+                                font-family: 'Roboto Slab';
+                                font-weight: 700;
+                                font-size: 24px;
+                                line-height: normal;
+                                color: #2E2E2E;
+                                margin: 0px 0px 0px 10px;
+                            }
+                        }
+                    }
+                }
+                h5 {
+                    font-family: 'Roboto Slab';
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: normal;
+                    color: #2E2E2E;
+                    margin: 0px 0px 10px 0px;
+                }
+                p {
+                    font-family: 'Poppins';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #2E2E2E;
+                }
+            }
+        }
+        .client-review-nav {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            .client-review-next {
+                background: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                margin: 0px 0px 0px 10px;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                line-height: 30px;
+                i {
+                    color: #EE3F59;
+                }
+                &:hover, &:focus {
+                    background: linear-gradient(219.67deg, #EE3F59 41.87%, #F04D3C 93.99%);
+                    i {
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .client-review-prev {
+                background: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.15);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                line-height: 30px;
+                i {
+                    color: #EE3F59;
+                }
+                &:hover, &:focus {
+                    background: linear-gradient(219.67deg, #EE3F59 41.87%, #F04D3C 93.99%);
+                    i {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .service-card{
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.2);
+        border-radius: 20px;
+        padding: 40px 20px 20px;
+        h4{
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 60px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #EE3F59;
+        }
+        p{
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 37px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #2E2E2E;
+        }
+    }
+
+    .qualified-card{
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.2);
+        border-radius: 20px;
+        padding: 40px 20px 20px;
+        h4{
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 60px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #E59E33;
+        }
+        p{
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 37px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #2E2E2E;
+        }
+    }
+
+    .successful-card{
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 16px rgba(27, 43, 124, 0.2);
+        border-radius: 20px;
+        padding: 40px 20px 20px;
+        h4{
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 60px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #339AE5;
+        }
+        p{
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 37px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #2E2E2E;
+        }
+    }
+    &.our-services-services{
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 67px;
+            left: 130px;
+            height: 90px;
+            width: 90px;
+            background: url(../img/services-page/our-services-circle-shape.svg);
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            top: -45px;
+            left: 40px;
+            height: 90px;
+            width: 90px;
+            background: url(../img/services-page/our-services-pattern-shape.svg);
+        }
+    }
+    &.white-bg{
+        background: $white;
+        &:after{
+            display: none;
+        }
+        &:before{
+            display: none;
+        }
+    }
+}
+
+
+
+@media (max-width: $laptop) {
+    .our-services {
+        padding: 50px 0;
+        .service-card {
+            padding: 40px 20px 20px;
+            .img-block {
+                img {
+                    max-width: 60%;
+                }
+            }
+            h4 {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            p {
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+        .qualified-card {
+            padding: 40px 20px 20px;
+            .img-block {
+                img {
+                    max-width: 60%;
+                }
+            }
+            h4 {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            p {
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+        .successful-card {
+            padding: 40px 20px 20px;
+            .img-block {
+                img {
+                    max-width: 60%;
+                }
+            }
+            h4 {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            p {
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+    }
+    .custom-title-primary {
+        h3 {
+            font-size: 40px;
+            line-height: 52px;
+            margin: 0px 0px 20px 0px;
+        }
+    }    
+}
+
+@media (max-width: $extra-small-laptop) {
+    .our-services {
+        .service-card {
+            padding: 40px 20px 20px;
+        }
+
+        .qualified-card {
+            padding: 40px 20px 20px;
+        }
+        .successful-card {
+            padding: 40px 20px 20px;
+        }
+    }
+}
+
+@media (max-width: $ipad-landscape) {
+    .our-services {
+        .service-card {
+            padding: 40px 20px 20px;
+        }
+
+        .qualified-card {
+            padding: 40px 20px 20px;
+        }
+        .successful-card {
+            padding: 40px 20px 20px;
+        }
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .our-services {
+        padding: 100px 0;
+        .custom-title-primary {
+            padding: 0px 0px;
+        }
+        p {
+            padding: 0px 10px;
+            margin: 20px 0px;
+        }
+        .client-review-slider {
+            position: relative;
+            margin-top: 0px !important;
+            margin-bottom: 30px;
+            h5 {
+                font-size: 25px;
+            }
+            .client-review-nav {
+                top: 5px;
+            }
+            .client-review-carousel {
+                .client-review-box {
+                    p {
+                        padding: 0px 0px;
+                        margin: 0px 0px;
+                    }
+                }
+            }
+        }
+        .service-card {
+            margin-bottom: 20px;
+            padding: 40px 20px 20px;
+            .img-block {
+                img {
+                    max-width: 40%;
+                    max-width: 40%;
+                }
+            }
+        }
+
+        .qualified-card {
+            padding: 40px 20px 20px;
+        }
+        .successful-card {
+            padding: 40px 20px 20px;
+            .img-block {
+                img {
+                    max-width: 40%;
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: $small-mobile) {
+    .our-services {
+        padding: 70px 0;
+        .custom-title-primary {
+            padding: 0px 0px;
+        }
+        p {
+            padding: 0px 10px;
+            margin: 20px 0px;
+        }
+        .client-review-slider {
+            position: relative;
+            margin-top: 0px !important;
+            h5 {
+                font-size: 20px;
+            }
+            .client-review-nav {
+                top: 50px;
+            }
+            .client-review-carousel {
+                .client-review-box {
+                    p {
+                        padding: 0px 0px;
+                        margin: 0px 0px;
+                    }
+                }
+            }
+        }
+        .service-card {
+            margin-bottom: 20px;
+            .img-block {
+                img {
+                    max-width: 40%;
+                    max-width: 40%;
+                }
+            }
+        }
+        .successful-card {
+            .img-block {
+                img {
+                    max-width: 40%;
+                }
+            }
+        }
+    }    
+}

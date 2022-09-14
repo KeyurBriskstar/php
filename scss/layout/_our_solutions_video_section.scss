@@ -1,0 +1,34 @@
+.our-solutions-video-section{
+    padding: 100px 0;
+    margin: 0;
+    h2{
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 62px;
+        text-transform: capitalize;
+        color: #EE3F59;
+        padding: 0 0 10px;
+    }
+    p{
+        margin: 0 0 40px;
+    }
+}
+
+
+@media (max-width: $large-laptop) {
+    .our-solutions-video-section {
+        h2{
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+}
+
+@media (max-width: $ipad-pro) {
+    .our-solutions-video-section {
+        h2{
+            font-size: 34px;
+            line-height: 45px;
+        }
+    }
+}

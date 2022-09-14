@@ -1,0 +1,102 @@
+.platforms-integrations-section{
+    padding: 100px 0 50px;
+    background: url(../img/our-solutions-page/platforms-integrations-bg.png) no-repeat top left;
+    .first-text{
+        max-width: 50%;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+    .platforms-integrations-img{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .platforms-inn{
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        img{
+            margin-right: 45px;
+        }
+        h4{
+            font-size: 28px;
+            line-height: 38px;
+            color: #2E2E2E;
+        }
+    }
+    .common-title-small{
+        h2{
+            font-size: 42px;
+            padding: 60px 0 0 0;
+            &:before{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media (max-width: $large-laptop) {
+    .platforms-integrations-section {
+        .platforms-inn {
+            h4{
+                font-size: 22px;
+                line-height: 32px;
+                br{
+                    display: none;
+                }
+            }
+            img{
+                margin-right: 20px;
+                max-width: 30%;
+            }
+        }
+        .platforms-integrations-img{
+            max-width: 70%;
+        }
+    }
+}
+
+
+@media (max-width: $large-laptop) {
+    .platforms-integrations-section{
+        background-size: 10%;
+        .platforms-integrations-img{
+            max-width: 65%;
+        }
+        .common-title-small {
+            h2{
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: $extra-small-laptop) {
+    .platforms-integrations-section {
+        .platforms-inn {
+            h4{
+                font-size: 20px;
+                line-height: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-portrait) {
+    .platforms-integrations-section {
+        .platforms-integrations-img{
+            max-width: 100%;
+        }
+        .first-text{
+            max-width: 95%;
+        }
+    }
+}
+
+@media (max-width: $large-mobile) {
+    .platforms-integrations-section{
+        background-size: 20%;
+    }
+}
